@@ -6,45 +6,119 @@
     <title>Flex Box Basic</title>
 
     <style>
-         body{
-              background: #51546a;
-              color: white;
-         }
+      body {
+        background: #51546a;
+        color: white;
+        font-size: 25px;
+      }
 
-         .parent-1{
+      @media (min-width: 600px) {
+        .parent-1 {
+          display: flex;
+        }
 
-         }
-         
-         .parent-1 div{
-              border: 1px solid #ccc;
-              padding: 10px
-         }
-         .item-1{
-              
-         }
+        .parent-2 {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
 
-         .item-2{
+     .parent-3{
+          display: flex;
+          justify-content: space-around;
+     }
 
-         }
+      .parent-1 div,
+      .parent-2 div, .parent-3 img {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      .item-1 {
+        flex: 2;
+        order: 2;
+      }
+
+      .item-2 {
+        flex: 1;
+        order: 3;
+      }
+      .item-3 {
+        flex: 1;
+        order: 1;
+      }
+
+      .item-4 {
+       flex-basis: 25%;
+      }
+
+      img{
+           width: 50px;
+           height: 50px;
+      }
     </style>
   </head>
 
   <body>
-       <div class="parent-1">
-            <div class="item-1">
-            <h3>Item One</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          </div>
-       
-          <div class="item-2">
-               <h3>Item two</h3>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          </div>
+    <div class="parent-1">
+      <div class="item-1">
+        <h3>Item One</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
 
-          <div class="item-3">
-               <h3>Item Three</h3>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-          </div>
-     </div>
+      <div class="item-2">
+        <h3>Item two</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+
+      <div class="item-3">
+        <h3>Item Three</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-2">
+      <div class="item-4">
+        <h3>Item Four</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+
+      <div class="item-4">
+        <h3>Item Five</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+
+      <div class="item-4">
+        <h3>Item Six</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+      </div>
+    </div>
+
+    <div class="parent-3">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
+    </div>
   </body>
 </html>
