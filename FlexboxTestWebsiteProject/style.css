@@ -13,12 +13,26 @@ html, body{
 .navbar{
      display: flex;
      padding: 10px;
+     max-width: 1140px;
+     width: 100%;
+     margin: 0 auto;
+     justify-content: space-between;
 
 }
 
 .brand, .nav-link{
      text-transform: uppercase;
      color: #303137;
+
+}
+
+.brand{
+     font-size: 25px;
+}
+
+.Template{
+     color: red;
+     font-size: 25px;
 }
 
 .topnav{
