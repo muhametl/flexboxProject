@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex Box Basic</title>
 
-    <style>
-      body {
-        background: #51546a;
-        color: white;
-        font-size: 25px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flex Box Basic</title>
+
+  <style>
+    body {
+      background: #51546a;
+      color: white;
+      font-size: 25px;
+    }
+
+    @media (min-width: 600px) {
+      .parent-1 {
+        display: flex;
       }
 
-      @media (min-width: 600px) {
-        .parent-1 {
-          display: flex;
-        }
-
-        .parent-2 {
-          display: flex;
-          justify-content: space-between;
-        }
+      .parent-2 {
+        display: flex;
+        justify-content: space-between;
       }
+    }
 
-     .parent-3{
-          display: flex;
-          justify-content: space-around;
-     }
+    .parent-3 {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap-reverse
+    }
 
-      .parent-1 div,
-      .parent-2 div, .parent-3 img {
-        border: 1px solid #ccc;
-        padding: 10px;
-      }
-      .item-1 {
-        flex: 2;
-        order: 2;
-      }
+    .parent-1 div,
+    .parent-2 div,
+    .parent-3 img {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
 
-      .item-2 {
-        flex: 1;
-        order: 3;
-      }
-      .item-3 {
-        flex: 1;
-        order: 1;
-      }
+    .item-1 {
+      flex: 2;
+      order: 2;
+    }
 
-      .item-4 {
-       flex-basis: 25%;
-      }
+    .item-2 {
+      flex: 1;
+      order: 3;
+    }
 
-      img{
-           width: 50px;
-           height: 50px;
-      }
-    </style>
-  </head>
+    .item-3 {
+      flex: 1;
+      order: 1;
+    }
 
-  <body>
+    .item-4 {
+      flex-basis: 25%;
+    }
+
+    img {
+
+    }
+  </style>
+</head>
+
+<!-- <body>
     <div class="parent-1">
       <div class="item-1">
         <h3>Item One</h3>
@@ -109,16 +113,16 @@
           industry.
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <div class="parent-3">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-         <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">
-    </div>
-  </body>
+<div class="parent-3">
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">1
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">2
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">3
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">4
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">5
+  <img src="https://image.winudf.com/v2/image/Y29tLmRldnNsb3Blcy5kZXZzbG9wZXNfaWNvbl8wXzQ5ZjRlY2Ez/icon.png?w=170&fakeurl=1&type=.png">6
+  </div>
+</body>
+
 </html>
