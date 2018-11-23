@@ -7,5 +7,28 @@ html, body{
      font-size: 1rem;
      color: #303137;
      margin: 0;
-     
+
+}
+
+.navbar{
+     display: flex;
+     padding: 10px;
+
+}
+
+.brand, .nav-link{
+     text-transform: uppercase;
+     color: #303137;
+}
+
+.topnav{
+     display: flex;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+
+.topnav .nav-link{
+     text-decoration: none;
+     padding-left: 20px;
 }
