@@ -20,7 +20,7 @@ html, body{
 
 }
 
-.brand, .nav-link{
+.brand, .nav-link, a{
      text-transform: uppercase;
      color: #303137;
 
@@ -40,14 +40,14 @@ html, body{
      margin: 0;
      padding: 0;
      list-style: none;
-     flex-direction: column;
-
+     
 }
 
-.topnav .nav-link{
+.topnav .nav-link, a {
      text-decoration: none;
      padding-left: 20px;
-}
+     font-size: 20px;
+ }
 
 .dropdownLink{
      display: none;
@@ -75,15 +75,20 @@ ul.topnav.responsive li.dropdownLink{
 
 ul.topnav.responsive{
      flex-direction: column;
+     text-align: right;
 }
+
 
 ul.topnav.responsive li{
      position: relative;
      top: 30px;
+     right: 30px;
+
 }
 
 ul.topnav.responsive li a.nav-link{
      display: block;
+     line-height: 2;
 }
 
 
