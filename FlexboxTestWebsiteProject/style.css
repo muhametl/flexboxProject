@@ -83,6 +83,23 @@ header{
 
 }
 
+.media-object{
+     display: flex;
+}
+
+.icon-wrapper{
+     flex: 1;
+     display: flex;
+     justify-content: center;
+}
+
+.icon{
+     height: 180px;
+}
+
+.blurb-wrapper{
+     float: 1px;
+}
 
 /* mobile responsive */
 @media (max-width: 768px){
