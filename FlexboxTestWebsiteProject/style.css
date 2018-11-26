@@ -94,11 +94,22 @@ header{
 }
 
 .icon{
-     height: 180px;
+     height: 200px;
 }
 
 .blurb-wrapper{
-     float: 1px;
+     flex: 1px;
+}
+
+.blurb-header{
+     font-size: 24px;
+     margin-top: 0;
+
+}
+
+.blurb-info{
+     color: #646b90;
+     font-size: 18px;
 }
 
 /* mobile responsive */
