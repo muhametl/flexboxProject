@@ -40,9 +40,51 @@ html, body{
      margin: 0;
      padding: 0;
      list-style: none;
+     flex-direction: column;
+
 }
 
 .topnav .nav-link{
      text-decoration: none;
      padding-left: 20px;
+}
+
+.dropdownLink{
+     display: none;
+}
+
+@media (max-width: 768px){
+     ul.topnav li a.nav-link{
+          display: none;
+     }
+
+
+ul.topnav li.dropdownLink{
+     display: block;
+     position: absolute;
+     top: 15px;
+     right: 20px;
+
+}
+
+ul.topnav.responsive li.dropdownLink{
+     position: absolute;
+     top: 15px;
+     right: 20px;
+}
+
+ul.topnav.responsive{
+     flex-direction: column;
+}
+
+ul.topnav.responsive li{
+     position: relative;
+     top: 30px;
+}
+
+ul.topnav.responsive li a.nav-link{
+     display: block;
+}
+
+
 }
