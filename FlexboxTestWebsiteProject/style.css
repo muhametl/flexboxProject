@@ -1,155 +1,163 @@
-html, body{
-     font-family: "Helvatica Neue", Arial, Helvetica, sans-serif;
-     font-style: normal;
-     font-variant: normal;
-     font-weight: 400;
-     line-height: 20px;
-     font-size: 1rem;
-     color: #303137;
-     margin: 0;
-
+html,
+body {
+  font-family: "Helvatica Neue", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 1rem;
+  color: #303137;
+  margin: 0;
 }
 
-.navbar, .container{
-     display: flex;
-     max-width: 1140px;
-     width: 100%;
-     margin: 0 auto;
-
+.navbar,
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.navbar{
-     justify-content: space-between;
-     padding: 10px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-
-.brand, .nav-link, a{
-     text-transform: uppercase;
-     color: #303137;
-
+.brand,
+.nav-link,
+a {
+  text-transform: uppercase;
+  color: #303137;
 }
 
-.brand{
-     font-size: 25px;
+.brand {
+  font-size: 25px;
 }
 
-.Template{
-     color: red;
-     font-size: 25px;
+.Template {
+  color: red;
+  font-size: 25px;
 }
 
-.topnav{
-     display: flex;
-     margin: 0;
-     padding: 0;
-     list-style: none;
-     
+.topnav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.topnav .nav-link, a {
-     text-decoration: none;
-     padding-left: 20px;
-     font-size: 20px;
- }
-
-.dropdownLink{
-     display: none;
+.topnav .nav-link,
+a {
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 20px;
 }
 
-
-header{
-     display: flex;
-     justify-content: center;
-     
+.dropdownLink {
+  display: none;
 }
 
-.headshot-wrapper{
-     display: flex;
-     flex-direction: column;
-     text-align: center;
-     padding: 6rem 0;
+header {
+  display: flex;
+  justify-content: center;
 }
 
-.headshot{
-     border-radius: 50%;
-     max-width: 200px;
-     width: 100%;
+.headshot-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 0;
 }
 
-.services{
-     background-color: #f1f3fa;
-     padding: 4rem 1rem;
-
+.headshot {
+  border-radius: 50%;
+  max-width: 200px;
+  width: 100%;
 }
 
-.media-object{
-     display: flex;
+.services {
+  background-color: #f1f3fa;
+  padding: 4rem 1rem;
 }
 
-.icon-wrapper{
-     flex: 1;
-     display: flex;
-     justify-content: center;
+.media-object {
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
 }
 
-.icon{
-     height: 200px;
+.icon-left,
+.icon-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.blurb-wrapper{
-     flex: 1px;
+.blurb-wrapper-right,
+.blurb-wrapper-left {
+  flex: 1;
 }
 
-.blurb-header{
-     font-size: 24px;
-     margin-top: 0;
-
+.icon-left,
+.blurb-wrapper-left {
+  order: 1;
 }
 
-.blurb-info{
-     color: #646b90;
-     font-size: 18px;
+.icon-right,
+.blurb-wrapper-right {
+  order: 2;
+}
+
+.icon {
+  height: 200px;
+}
+
+.blurb-wrapper {
+  flex: 1px;
+}
+
+.blurb-header {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.blurb-info {
+  color: #646b90;
+  font-size: 18px;
 }
 
 /* mobile responsive */
-@media (max-width: 768px){
-     ul.topnav li a.nav-link{
-          display: none;
-     }
+@media (max-width: 768px) {
+  ul.topnav li a.nav-link {
+    display: none;
+  }
 
+  ul.topnav li.dropdownLink {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
 
-ul.topnav li.dropdownLink{
-     display: block;
-     position: absolute;
-     top: 15px;
-     right: 20px;
+  ul.topnav.responsive li.dropdownLink {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
 
-}
+  ul.topnav.responsive {
+    flex-direction: column;
+    text-align: right;
+  }
 
-ul.topnav.responsive li.dropdownLink{
-     position: absolute;
-     top: 15px;
-     right: 20px;
-}
+  ul.topnav.responsive li {
+    position: relative;
+    top: 30px;
+    right: 30px;
+  }
 
-ul.topnav.responsive{
-     flex-direction: column;
-     text-align: right;
-}
-
-
-ul.topnav.responsive li{
-     position: relative;
-     top: 30px;
-     right: 30px;
-
-}
-
-ul.topnav.responsive li a.nav-link{
-     display: block;
-     line-height: 2;
-}
-
-
+  ul.topnav.responsive li a.nav-link {
+    display: block;
+    line-height: 2;
+  }
 }
