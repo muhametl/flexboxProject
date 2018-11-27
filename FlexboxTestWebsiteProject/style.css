@@ -73,6 +73,7 @@ header {
   border-radius: 50%;
   max-width: 200px;
   width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
 }
 
 .services {
@@ -141,6 +142,14 @@ header {
   border-radius: 3px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
 }
+
+
+.section-header{
+  text-align: center;
+  padding: 6rem 0 4rem;
+}
+
+
 
 /* mobile responsive */
 @media (max-width: 768px) {
