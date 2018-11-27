@@ -73,7 +73,7 @@ header {
   border-radius: 50%;
   max-width: 200px;
   width: 100%;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .services {
@@ -127,29 +127,26 @@ header {
   font-size: 18px;
 }
 
-.quote-btn-wrapper{
+.quote-btn-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
-.quote-btn{
+.quote-btn {
   color: #ffffff;
   background-color: #66b6d3;
   font-size: 18px;
   border: none;
-  padding: .8rem 4rem;
+  padding: 0.8rem 4rem;
   border-radius: 3px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.section-header{
+.section-header {
   text-align: center;
   padding: 6rem 0 4rem;
 }
-
-
 
 /* mobile responsive */
 @media (max-width: 768px) {
